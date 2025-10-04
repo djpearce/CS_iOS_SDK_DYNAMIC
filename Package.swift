@@ -5,7 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "CS_iOS_SDK",
-    platforms: [.iOS(.v12)],
+    platforms: [
+        .macOS(.v11),
+        .iOS(.v13),
+        .watchOS(.v6),
+        .tvOS(.v13),
+    ],
     products: [
         .library(
             name: "ContentsquareModule",
